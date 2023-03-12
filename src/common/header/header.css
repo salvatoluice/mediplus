@@ -3,9 +3,6 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .app__navbar {
@@ -26,13 +23,12 @@
 }
 
 .navbar__logo span {
-    color: #18be18;
+    color: #02D6A3;
 }
 
 .navbar__links ul {
     display: flex;
     align-items: center;
-    /* padding: 0.9rem; */
     text-align: center;
 }
 
@@ -55,7 +51,6 @@
     }
   }
   
-  /* Apply the animation to the text */
   .blinking-text {
     animation: blink 1s infinite;
   }
@@ -71,3 +66,85 @@
     color: #fff;
     font-size: 1rem;
 }
+
+
+/* Hero section Styling */
+
+.app__hero {
+  height: 100%;
+  padding-top: 15%;
+  /* padding-left: 5rem; */
+  background-color: rgb(25, 68, 82, 0.5);
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 50vw; /* Set the width to 50% of the viewport width */
+  height: 100vh;
+  transform: skew(15deg);
+  transform-origin: bottom left;
+  z-index: -1;
+}
+
+.slanted__content {
+  transform: skew(-15deg); /* Skew the content in the opposite direction (to keep it horizontal) */
+  transform-origin: top left;
+  padding-left: 10vw;
+}
+
+.slanted__content h5 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+ .slanted__content h3 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.6rem;
+ }
+
+  .slanted__content h3>span {
+    color: #02D6A3;
+  }
+
+  .slanted__content p {
+    color: #fff;
+    font-weight: 200;
+ }
+
+ .hero__buttons {
+  padding-top: 1rem;
+  /* margin: 1rem; */
+ }
+
+ .btn1 {
+  background-color: #02D6A3;
+  outline: none;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 1rem;
+  color: #fff;
+ }
+
+ .btn1:hover {
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+ }
+
+ .btn2 {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 1rem;
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+ }
+
+ .btn2:hover {
+  background: #02D6A3;
+  cursor: pointer;
+  border: none;
+ }

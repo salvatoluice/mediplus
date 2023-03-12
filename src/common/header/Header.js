@@ -30,11 +30,22 @@ const Header = () => {
         </div>
         <div className='navbar__button'>
             <button>
-                <span className='blinking-text'>Call Emergency!</span>
+                <span className='blinking-text'>Call fo Emergency!</span>
             </button>
         </div>
       </div>
-      <div className='app__hero'></div>
+      <div className='app__hero'>
+        <div className='slanted__content'>
+            <h5>WE GIVE YOU THE BEST</h5>
+            <h3>Making Health</h3>
+            <h3><span>Care Better together</span></h3>
+            <p>We are dedicated to providing the best healthcare to you. Lorem ipsum dolor sit amet.</p>
+            <div className='hero__buttons'>
+                <button className='btn1'>HOW CAN WE HELP</button>
+                <button className='btn2'>BOOK APPOINTMENT</button>
+            </div>
+        </div>
+      </div>
     </div>
   )
 }
