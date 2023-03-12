@@ -1,0 +1,73 @@
+.app__header {
+    background-image: url("https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWNhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.app__navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.3);
+    position: fixed;
+    width: 100%;
+    padding: 0.7rem 2rem;
+    height: 60px;
+    align-items: center;
+}
+
+.navbar__logo {
+    font-size: 2rem;
+    color: #000;
+}
+
+.navbar__logo span {
+    color: #18be18;
+}
+
+.navbar__links ul {
+    display: flex;
+    align-items: center;
+    /* padding: 0.9rem; */
+    text-align: center;
+}
+
+.navbar__links ul li {
+    margin-left: 1rem;
+}
+.navbar__links li:hover {
+    color: #18be18;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply the animation to the text */
+  .blinking-text {
+    animation: blink 1s infinite;
+  }
+
+.navbar__button button{
+    background: red;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 110px;
+    padding: 3px;
+    color: #fff;
+    font-size: 1rem;
+}
