@@ -1,0 +1,35 @@
+.app__float {
+    display: flex;
+    width: 80%;
+    margin:  auto;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.app__float .float {
+    background: #fff;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.float svg{
+    font-size: 2rem;
+    color: #02D6A3;
+}
+
+.float h2 {
+    padding-bottom: 0.5rem;
+}
+
+.float p {
+    color: gray;
+    padding-bottom: 1rem;
+}
+
+.float a {
+    color: #02D6A3;
+}

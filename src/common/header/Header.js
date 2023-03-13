@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './header.css'
 
 const Header = () => {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const toggleNav = () => {
+      setIsNavOpen(!isNavOpen);
+    };
   return (
     <div className='app__header'>
       <div className='app__navbar'>
@@ -30,9 +35,12 @@ const Header = () => {
         </div>
         <div className='navbar__button'>
             <button>
-                <span className='blinking-text'>Call fo Emergency!</span>
+                <span className='blinking-text'>Emergency!</span>
             </button>
         </div>
+        <div className="navbar__toggle" onClick={toggleNav}>
+        <div className="navbar__toggle-icon"></div>
+      </div>
       </div>
       <div className='app__hero'>
         <div className='slanted__content'>

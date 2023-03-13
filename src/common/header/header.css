@@ -67,7 +67,49 @@
     font-size: 1rem;
 }
 
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .navbar__links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
 
+  .navbar__links ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar__links li {
+    margin: 20px 0;
+  }
+
+  .navbar__links a {
+    font-size: 1.2rem;
+  }
+
+  .navbar__button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navbar__links.show {
+    left: 0;
+  }
+}
 /* Hero section Styling */
 
 .app__hero {
