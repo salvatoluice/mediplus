@@ -1,0 +1,70 @@
+.app__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    margin: 2rem;
+    margin: auto;
+}
+
+.about__images {
+    position: relative;
+    width: 50%;
+}
+
+.about__text {
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.about__text h3 {
+    color: #02D6A3;
+}
+
+.about__text h1 {
+    font-size: 2.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.about__text p {
+    color: gray;
+    padding-bottom: 1rem;
+}
+
+
+.btn1 {
+    background-color: #02D6A3;
+    outline: none;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem;
+    color: #fff;
+   }
+  
+   .btn1:hover {
+    background: transparent;
+    cursor: pointer;
+    color: #02D6A3;
+    border: 1px solid #02D6A3;
+   }
+  
+   .btn2 {
+    background: transparent;
+    border: 1px solid #02D6A3;
+    padding: 1rem;
+    color: #02D6A3;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+   }
+  
+   .btn2:hover {
+    background: #02D6A3;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #02D6A3;
+   }
