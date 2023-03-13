@@ -40,8 +40,9 @@
 .image__detail {
     height: 400px;
     width: 300px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     background: #02D6A3;
+    padding-bottom: 0.5rem;
 }
 
 .card-image {
