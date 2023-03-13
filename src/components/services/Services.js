@@ -54,11 +54,6 @@ const Services = () => {
             <h2>Neurology</h2>
             <p>Lorem ipsum dolor sit amet. We offer neurology at our Nairobi main Hospital. Pay us a visit for more information</p>
         </div>
-        <div className='service'>
-            <TbBrain />
-            <h2>Neurology</h2>
-            <p>Lorem ipsum dolor sit amet. We offer neurology at our Nairobi main Hospital. Pay us a visit for more information</p>
-        </div>
       </div>
     </div>
   )
