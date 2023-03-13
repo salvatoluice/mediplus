@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './common/header/Header';
 import About from './components/about/About';
+import Cta from './components/cta/Cta';
 import Float from './components/float/Float';
 import Services from './components/services/Services';
 import Team from './components/team/Team';
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Team />
       <Tips />
+      <Cta />
     </div>
   );
 }

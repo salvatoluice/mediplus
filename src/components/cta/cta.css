@@ -1,0 +1,27 @@
+.app__cta {
+    background: #053D4C;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.app__cta h4 {
+    color: #02D6A3;
+    font-weight: normal;
+}
+
+.app__cta h2 {
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.app__cta p {
+    color: gray;
+    padding-bottom: 1rem;
+}
