@@ -1,0 +1,68 @@
+.app__services {
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    margin: auto;
+}
+
+.app__services h4 {
+    color: #02D6A3;
+    padding-bottom: 0.8rem;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.services__text {
+    display: flex;
+}
+
+.services__text p {
+    color: gray;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.services__text button {
+    width: 300px;
+}
+
+.services__sections {
+    display: flex;
+    flex-wrap: wrap;
+    margin:  auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.service {
+    background: #fff;
+    width: 270px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.service svg {
+    color: #02D6A3;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.service h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.service  p {
+    color: gray;
+}
