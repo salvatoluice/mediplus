@@ -17,7 +17,7 @@ const Header = () => {
         <div className='navbar__links'>
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/doctors'>Doctors</Link>
                 </li>
                 <li>
                     <Link to='/login' style={{fontWeight: 'bold'}}>Login</Link>
