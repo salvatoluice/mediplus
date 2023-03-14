@@ -1,0 +1,75 @@
+.appointment-form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWNhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.appointment-form-container h2 {
+  /* color: #02D6A3; */
+  padding-bottom: 1rem;
+}
+
+form {
+  border: 2px solid #02D6A3;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  padding: 2rem;
+ }
+
+ .form-group {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .form-group label {
+  font-size: 1.2rem;
+ }
+
+ .form-group input {
+  background: lightgray;
+  border: none;
+  outline: none;
+  caret-color: #02D6A3;
+  height: 50px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #02D6A3;
+ }
+
+ .form-group textarea {
+  background: lightgray;
+  border: none;
+  outline: none;
+  caret-color: #02D6A3;
+  height: 50px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #02D6A3;
+ }
+
+.form-group button {
+  border: 1px solid #02D6A3;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background: #02D6A3;
+  color: #fff;
+}
+
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+    }
+  }
+  

@@ -17,26 +17,24 @@ const Header = () => {
         <div className='navbar__links'>
             <ul>
                 <li>
-                    <Link>Home</Link>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link>Services</Link>
+                    <Link to='/login' style={{fontWeight: 'bold'}}>Login</Link>
                 </li>
                 <li>
-                    <Link>Gallery</Link>
+                    <Link to='/services'>Services</Link>
                 </li>
                 <li>
-                    <Link>About Us</Link>
+                    <Link to='/emergency'>Emergency</Link>
                 </li>
                 <li>
-                    <Link>Contact</Link>
+                    <Link to='/about'>About Us</Link>
+                </li>
+                <li>
+                    <Link to='/contact'>Contact</Link>
                 </li>
             </ul>
-        </div>
-        <div className='navbar__button'>
-            <button>
-                <span className='blinking-text'>Emergency!</span>
-            </button>
         </div>
         <div className="navbar__toggle" onClick={toggleNav}>
         <div className="navbar__toggle-icon"></div>
@@ -50,7 +48,7 @@ const Header = () => {
             <p>We are dedicated to providing the best healthcare to you. Lorem ipsum dolor sit amet.</p>
             <div className='hero__buttons'>
                 <button className='btn1'>HOW CAN WE HELP</button>
-                <button className='btn2'>BOOK APPOINTMENT</button>
+                <button className='btn2'><Link to='/appointment'>BOOK APPOINTMENT</Link></button>
             </div>
         </div>
       </div>
