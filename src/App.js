@@ -3,6 +3,7 @@ import Header from './common/header/Header';
 import About from './components/about/About';
 import Cta from './components/cta/Cta';
 import Float from './components/float/Float';
+import News from './components/news/News';
 import Services from './components/services/Services';
 import Team from './components/team/Team';
 import Tips from './components/tips/Tips';
@@ -17,6 +18,7 @@ function App() {
       <Team />
       <Tips />
       <Cta />
+      <News />
     </div>
   );
 }
