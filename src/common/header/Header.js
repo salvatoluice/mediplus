@@ -38,7 +38,7 @@ const Header = () => {
         <div className='navbar__links'>
             <ul>
                 <li>
-                {user?.email.includes("admin") ? <Link to='/admin' className="special">Admin Dashboard</Link> : user?.email.includes("doctor") ? <Link to='/doctor' className="special">Doctor</Link> : !user ? <Link to='/login'>Login</Link> : null}
+                {user?.email.includes("admin") ? <Link to='/admin' className="special">Admin Dashboard</Link> : user?.email.includes("doctor") ? <Link to='/doctor' className="special">Doctor</Link> : !user ? <Link to='/login'>Login</Link> : <Link>My Profile</Link>}
                 </li>
                 <li>
                     <Link to='/doctors'>Doctors</Link>
