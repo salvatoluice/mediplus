@@ -1,9 +1,30 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import { auth, db, logout } from "../../firebase";
+import { query, collection, getDocs, where } from "firebase/firestore";
 import './header.css'
 
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [user, loading] = useAuthState(auth);
+    const [name, setName] = useState("");
+    const navigate = useNavigate();
+    const fetchUserName = async () => {
+      try {
+        const q = query(collection(db, "users"), where("uid", "==", user?.uid));
+        const doc = await getDocs(q);
+        const data = doc.docs[0].data();
+        setName(data.name);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    useEffect(() => {
+      if (loading) return;
+      if (!user) return navigate("/");
+      fetchUserName();
+    }, [user, loading]);
 
     const toggleNav = () => {
       setIsNavOpen(!isNavOpen);
@@ -17,10 +38,10 @@ const Header = () => {
         <div className='navbar__links'>
             <ul>
                 <li>
-                    <Link to='/doctors'>Doctors</Link>
+                {user?.email.includes("admin") ? <Link to='/admin' className="special">Admin Dashboard</Link> : user?.email.includes("doctor") ? <Link to='/doctor' className="special">Doctor</Link> : !user ? <Link to='/login'>Login</Link> : null}
                 </li>
                 <li>
-                    <Link to='/login' style={{fontWeight: 'bold'}}>Login</Link>
+                    <Link to='/doctors'>Doctors</Link>
                 </li>
                 <li>
                     <Link to='/services'>Services</Link>

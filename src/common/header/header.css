@@ -22,6 +22,12 @@
     color: #000;
 }
 
+.special {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
 .navbar__logo span {
     color: #02D6A3;
 }

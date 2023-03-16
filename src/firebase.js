@@ -16,7 +16,6 @@ import {
   where,
   addDoc,
 } from "firebase/firestore";
-// Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyA4Ctz0qUiJ2byUrTzV6N12qgJr3izFVW0",
@@ -27,6 +26,8 @@ const firebaseConfig = {
   appId: "1:637069123002:web:64e46545a465878b269183",
   measurementId: "G-4J303HD15R"
 };
+
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
