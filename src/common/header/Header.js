@@ -55,6 +55,9 @@ const Header = () => {
                 <li>
                     <Link to='/contact'>Contact</Link>
                 </li>
+                <li>
+                  {user ? <Link to='/dashboard'>Logout</Link> : null}
+                </li>
             </ul>
         </div>
         <div className="navbar__toggle" onClick={toggleNav}>
