@@ -3,7 +3,7 @@ import './App.css';
 import AppointmentForm from './components/appointment/AppointmentForm';
 import Pages from './components/Pages';
 import Doctors from './pages/doctors/Doctors';
-import Dashboard from './pages/login/Dashboard';
+// import Dashboard from './pages/login/Dashboard';
 import Login from './pages/login/Login';
 import Register from './pages/login/Register';
 import Reset from './pages/login/Reset';
@@ -18,7 +18,6 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/reset' element={<Reset />} />
-        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
     </div>
   );
