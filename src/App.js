@@ -7,6 +7,7 @@ import Doctors from './pages/doctors/Doctors';
 import Login from './pages/login/Login';
 import Register from './pages/login/Register';
 import Reset from './pages/login/Reset';
+import Services from './pages/services/Services';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/reset' element={<Reset />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
     </div>
   );
