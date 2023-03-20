@@ -1,5 +1,6 @@
 import React from 'react'
 import './services.css'
+import { TbBrain } from 'react-icons/tb'
 
 const Services = () => {
   return (
@@ -13,6 +14,14 @@ const Services = () => {
             <p>Trying all to practice neutrality while minding compassion and quality service is what they tirelessly work for.</p>
         </div>
         <div className='line' />
+
+        <div className='app__container'>
+            <div className='single__service'>
+                <TbBrain />
+                <h2>Neurology</h2>
+                <p>Lorem ipsum dolor sit amet. We offer neurology at our Nairobi main Hospital. Pay us a visit for more information</p>
+            </div>
+        </div>
     </div>
   )
 }
